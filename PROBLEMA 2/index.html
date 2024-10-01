@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora PHP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+            right: 80px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            font-size: 28px;
+            position: relative;
+            bottom: 280px;
+            left: 290px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        label {
+            font-size: 16px;
+            color: #555;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color: #4CAF50;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora PHP</h1>
+
+    <form action="calcular.php" method="post">
+        <label for="operando1">Número 1:</label>
+        <input type="number" name="operando1" required><br><br>
+
+        <label for="operando2">Número 2:</label>
+        <input type="number" name="operando2" required><br><br>
+
+        <label for="idade">Idade do Aluno:</label>
+        <input type="number" name="idade" required><br><br>
+
+        <label for="operacao">Escolha a operação:</label>
+        <select name="operacao">
+            <option value="soma">Somar</option>
+            <option value="subtracao">Subtrair</option>
+            <option value="multiplicacao">Multiplicar</option>
+            <option value="divisao">Dividir</option>
+            <option value="soma_idade">Somar com idade do aluno</option>
+        </select><br><br>
+
+        <button type="submit">Calcular</button>
+    </form>
+   
+
+</body>
+</html>
